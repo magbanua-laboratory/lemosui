@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(209, 207, 207);
+        }
+        #calculator {
+            width: 400px;
+            height: 70vh;
+            border: none;
+            background-color: rgb(152, 151, 151);
+            border-radius: 10px;
+        }
+        #display {
+            height: 15vh;
+            width: 85%;
+            margin-left: 30px;
+            margin-top: 30px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(84, 83, 83);
+            text-align: end;
+            color: white;
+            font-size: 40px;
+        }
+
+        #keys {
+            display: grid;
+            grid-template-columns:repeat(4, 1fr);
+            gap: 10px;
+            padding: 25px;
+        }
+        button {
+            width: 80px;
+            height: 55px;
+            border-radius: 10px;
+            border: none;
+            font-size: 20px;
+        }
+        .operator {
+            background-color: rgb(255, 168, 6);
+            color: white;
+        }
+        .equal {
+            background-color: rgb(51, 51, 244);
+            color: white;
+        }
+        #display::placeholder {
+            color: white;
+        }
+        #result {
+            padding: 20px;
+            margin-left: 30px;
+            margin-top: 20px;
+            width: 75%;
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <div>
+            <input type="text" id="display" placeholder="0">
+        </div>
+        <div id="keys">
+            <button>C</button>
+            <button>(</button>
+            <button>)</button>
+            <button>DEL</button>
+            <button>9</button>
+            <button>8</button>
+            <button>7</button>
+            <button>+</button>
+            <button>6</button>
+            <button>5</button>
+            <button>4</button>
+            <button>-</button>
+            <button>3</button>
+            <button>2</button>
+            <button>1</button>
+            <button>*</button>
+            <button>0</button>
+            <button>00</button>
+            <button>=</button>
+            <button>/</button>
+        </div>
+    </div>
+    <script src="/js/calculator.js"></script>
+</body>
+</html>
